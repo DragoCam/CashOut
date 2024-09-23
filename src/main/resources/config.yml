@@ -1,0 +1,31 @@
+note:
+  material: PAPER
+  data: 0
+  name: "&lBanknot"
+  lore:
+  - "$[money]"
+  - "Wypłacony przez [player]"
+
+messages:
+  insufficient-funds: "Nie masz wystarczającej ilości pieniędzy, aby wypłacić tę kwotę"
+  insufficient-permissions: "Nie masz wystarczających permisji"
+  inventory-full: "Proszę mieć wolne miejsce w swoim ekwipunku, aby utworzyć banknot"
+  invalid-note: "Ten banknot jest nieważny! Został usunięty z Twojego ekwipunku"
+  invalid-number: "Podałeś nieprawidłowy numer"
+  note-created: "Stworzyłeś banknot na $[money]"
+  note-given: "Dałeś banknot na $[money] do [player]"
+  note-received: "Dostałeś banknot na $[money] od [player]"
+  note-redeemed: "Banknot na kwotę $[money] został zrealizowany"
+  nothing-in-hand: "Nie masz nic w ręku, co mógłbyś zrealizować"
+  less-than-minimum: "Wprowadzona kwota jest mniejsza niż minimalna dozwolona kwota $[money]"
+  more-than-maximum: "Wprowadzona kwota przekracza maksymalną dozwoloną kwotę $[money]"
+  reloaded: "The Banknotes config.yml has been reloaded"
+  target-not-found: "Nie udało się znaleźć gracza o tej nazwie"
+  
+settings:
+  console-name: "CONSOLE"
+  minimum-float-amount: 0
+  maximum-float-amount: 2
+  minimum-withdraw-amount: 10.0
+  maximum-withdraw-amount: 5000.0
+  allow-right-click-to-deposit-notes: true

@@ -1,0 +1,40 @@
+name: '${project.name}'
+version: '${project.version}'
+authors: ${authors}
+website: '${project.url}'
+main: pl.lunarhost.lunarcashout.LunarCashOutPlugin
+api-version: '${apiVersion}'
+description: ${project.description}
+depend: [ Vault ]
+
+commands:
+  withdraw:
+    description: Withdraw money as a note
+    usage: |
+          Withdraw money from your bank account as a note.
+          /<command> [amount]
+  deposit:
+    description: Deposit a note
+  banknotes:
+    description: Reload the Banknotes plugin
+    aliases: [ banknote, bn, notes, note ]
+    usage: |
+          Reload the plugin or give banknotes to players.
+          /<command> <reload|give <player> <amount>>
+
+permissions:
+  CashOut.*:
+    description: Gives access to all Banknotes commands
+    children:
+      CashOut.withdraw: true
+      CashOut.deposit: true
+      CashOut.reload: true
+  CashOut.withdraw:
+    description: Allows you to withdraw banknotes
+    default: true
+  CashOut.deposit:
+    description: Allows you to deposit banknotes
+    default: true
+  CashOut.reload:
+    description: Allows you to reload the plugin
+    default: op
