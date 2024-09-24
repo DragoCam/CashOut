@@ -5,7 +5,8 @@ website: '${project.url}'
 main: pl.lunarhost.lunarcashout.LunarCashOutPlugin
 api-version: '${apiVersion}'
 description: ${project.description}
-depend: [ Vault ]
+depend: [Vault]
+softdeped: [ItemsAdder]
 
 commands:
   withdraw:
@@ -15,12 +16,6 @@ commands:
           /<command> [amount]
   deposit:
     description: Deposit a note
-  banknotes:
-    description: Reload the Banknotes plugin
-    aliases: [ banknote, bn, notes, note ]
-    usage: |
-          Reload the plugin or give banknotes to players.
-          /<command> <reload|give <player> <amount>>
 
 permissions:
   CashOut.*:
