@@ -9,13 +9,13 @@
 ### Valut
 ### Itemsadder (optional)
 ## Commands & Permissions
-### withdraw
+### /withdraw
 #### Withdraw money as a note
 #### CashOut.withdraw
-### deposit
+### /deposit
 #### Deposit a note
 #### CashOut.deposit
-### reload
+### /reload
 #### Allows you to reload the plugin
 #### CashOut.reload
 
